@@ -1,0 +1,55 @@
+@use 'color' as *;
+@use 'mixins' as *;
+
+.Listings--Searches {
+ padding: 25px 30px;
+ margin-top: -50px;
+ margin-bottom: 50px;
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ @include boxes();
+}
+
+.Listings--Searches--ClearAll {
+ background-color: transparent;
+ border: none;
+ color: $Desaturated-Dark-Cyan;
+ font-weight: 800;
+}
+
+.Listings--Searches--ClearAll:hover {
+ text-decoration: underline;
+}
+
+.Listing--Searches--ClearSearch {
+ display: flex;
+ font-size: 12px;
+ align-items: center;
+ height: 30px;
+ background-color: $Light-Grayish-Cyan-Table;
+ border-radius: 5px;
+}
+.Listings--Seraches--SearchContainer {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px 10px;
+}
+
+.Listing--Searches--ClearSearch--Name {
+ padding: 0 10px;
+ color: $Desaturated-Dark-Cyan;
+}
+
+.Listing--Searches--ClearSearch--Button {
+ background-color: $Desaturated-Dark-Cyan;
+ border: none;
+ width: 100%;
+ height: 100%;
+ padding: 1px 10px;
+ border-radius: 0 5px 5px 0;
+}
+
+.Listing--Searches--ClearSearch--Button:hover {
+ background-color: black;
+}

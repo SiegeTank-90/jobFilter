@@ -1,0 +1,22 @@
+@use 'color' as *;
+
+.Listings--Posts--Skills--Search-Button {
+ background-color: $Light-Grayish-Cyan-Table;
+ border-radius: 2px;
+ border: none;
+ height: 30px;
+ padding: 0 10px;
+ display: flex;
+ align-items: center;
+ color: $Desaturated-Dark-Cyan;
+}
+
+.Listings--Posts--SkilsS--Skill {
+ font-size: 12px;
+ font-weight: 800;
+}
+
+.Listings--Posts--Skills--Search-Button:hover {
+ background-color: $Desaturated-Dark-Cyan;
+ color: white;
+}

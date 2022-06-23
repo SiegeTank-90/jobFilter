@@ -1,0 +1,7 @@
+@use 'color' as *;
+
+@mixin boxes() {
+ border-radius: 1px 5px 5px 1px;
+ box-shadow: 5px 5px 10px 1px $Very-Dark-Grayish-Cyan-semiTransparent;
+ background-color: white;
+}

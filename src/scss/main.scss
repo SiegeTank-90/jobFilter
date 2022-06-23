@@ -1,0 +1,44 @@
+@use 'color' as *;
+@use 'mixins' as *;
+@use 'listing' as *;
+@use 'searchButton' as *;
+@use 'searches' as *;
+
+.App {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ min-height: 100vh;
+ min-width: 100vw;
+}
+
+.Background--Header {
+ position: relative;
+ background: url('../src/images/bg-header-desktop.svg') $Desaturated-Dark-Cyan;
+ background-size: auto;
+ width: 100%;
+ height: 100px;
+}
+
+.Background {
+ position: relative;
+ background-color: $Light-Grayish-Cyan-Background;
+ min-height: 100%;
+ min-width: 100%;
+}
+
+.Listings {
+ margin: 0 15%;
+}
+
+@media screen and (max-width: 500px) {
+ .Background--Header {
+  background: url('../src/images/bg-header-mobile.svg') $Desaturated-Dark-Cyan
+   no-repeat;
+  height: 150px;
+ }
+
+ .Listings {
+  margin: 0 5%;
+ }
+}

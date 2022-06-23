@@ -1,0 +1,216 @@
+.Listings--Posts {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 25px;
+  border-radius: 1px 5px 5px 1px;
+  box-shadow: 5px 5px 10px 1px hsla(180deg, 14%, 20%, 0.5);
+  background-color: white;
+}
+
+.Featured {
+  border-left: 3px solid hsl(180deg, 29%, 50%);
+}
+
+.Listings--Posts--Details .Listings--Posts--Details-Info {
+  display: inline-block;
+}
+
+.Listings--Posts--Skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  align-items: center;
+}
+
+.Listings--Posts--Details-Logo {
+  max-width: 75px;
+}
+
+.Listings--Posts--Details--Top,
+.Listings--Posts--Details--Middle,
+.Listings--Posts--Details--Bottom {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 0px 10px;
+}
+
+.Listings--Posts--Detials--Company,
+.Listings--Post--Details--New,
+.Listings--Posts--Detials--Time,
+.Listings--Post--Details-Contract,
+.Listings--Post--Details--Location,
+.Listings--Post--Details--Featured {
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.Listings--Posts--Detials--positions {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.Listings--Posts--Details--Bottom {
+  color: hsl(180deg, 8%, 52%);
+}
+
+.Listings--Posts--Detials--Company {
+  color: hsl(180deg, 29%, 50%);
+}
+
+.Listings--Post--Details--New,
+.Listings--Post--Details--Featured {
+  color: white;
+  font-weight: 500;
+}
+
+.Listings--Post--Details--New-Bubble,
+.Listings--Post--Details--Featured-Bubble {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 18px;
+}
+
+.Listings--Post--Details--New-Bubble {
+  background-color: hsl(180deg, 29%, 50%);
+}
+
+.Listings--Post--Details--Featured-Bubble {
+  background-color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .Listings--Posts {
+    margin-top: 75px;
+  }
+  .Listings--Posts--Details--Bottom {
+    padding-bottom: 25px;
+    border-bottom: 1px solid hsl(180deg, 31%, 95%);
+  }
+  .Listings--Posts--Details-Logo {
+    position: absolute;
+    margin-top: -75px;
+  }
+  .Listings--Posts--Skills {
+    margin: 15px;
+  }
+}
+.Listings--Posts--Skills--Search-Button {
+  background-color: hsl(180deg, 31%, 95%);
+  border-radius: 2px;
+  border: none;
+  height: 30px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  color: hsl(180deg, 29%, 50%);
+}
+
+.Listings--Posts--SkilsS--Skill {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.Listings--Posts--Skills--Search-Button:hover {
+  background-color: hsl(180deg, 29%, 50%);
+  color: white;
+}
+
+.Listings--Searches {
+  padding: 25px 30px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1px 5px 5px 1px;
+  box-shadow: 5px 5px 10px 1px hsla(180deg, 14%, 20%, 0.5);
+  background-color: white;
+}
+
+.Listings--Searches--ClearAll {
+  background-color: transparent;
+  border: none;
+  color: hsl(180deg, 29%, 50%);
+  font-weight: 800;
+}
+
+.Listings--Searches--ClearAll:hover {
+  text-decoration: underline;
+}
+
+.Listing--Searches--ClearSearch {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  height: 30px;
+  background-color: hsl(180deg, 31%, 95%);
+  border-radius: 5px;
+}
+
+.Listings--Seraches--SearchContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+
+.Listing--Searches--ClearSearch--Name {
+  padding: 0 10px;
+  color: hsl(180deg, 29%, 50%);
+}
+
+.Listing--Searches--ClearSearch--Button {
+  background-color: hsl(180deg, 29%, 50%);
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 1px 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.Listing--Searches--ClearSearch--Button:hover {
+  background-color: black;
+}
+
+.App {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.Background--Header {
+  position: relative;
+  background: url("../src/images/bg-header-desktop.svg") hsl(180deg, 29%, 50%);
+  background-size: auto;
+  width: 100%;
+  height: 100px;
+}
+
+.Background {
+  position: relative;
+  background-color: hsl(180deg, 52%, 96%);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.Listings {
+  margin: 0 15%;
+}
+
+@media screen and (max-width: 500px) {
+  .Background--Header {
+    background: url("../src/images/bg-header-mobile.svg") hsl(180deg, 29%, 50%) no-repeat;
+    height: 150px;
+  }
+  .Listings {
+    margin: 0 5%;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

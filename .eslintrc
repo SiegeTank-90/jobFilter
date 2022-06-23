@@ -1,0 +1,6 @@
+{
+ "rules": {
+  "react/jsx-indent": ["enabled", "tab"],
+  "prefer-single": ["warn", "prefer-single"]
+ }
+}

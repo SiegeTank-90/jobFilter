@@ -1,0 +1,104 @@
+@use 'color' as *;
+@use 'mixins' as *;
+
+.Listings--Posts {
+ background-color: white;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ margin-top: 10px;
+ padding: 25px;
+ @include boxes();
+}
+
+.Featured {
+ border-left: 3px solid $Desaturated-Dark-Cyan;
+}
+
+.Listings--Posts--Details .Listings--Posts--Details-Info {
+ display: inline-block;
+}
+
+.Listings--Posts--Skills {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px 10px;
+ align-items: center;
+}
+
+.Listings--Posts--Details-Logo {
+ max-width: 75px;
+}
+
+.Listings--Posts--Details--Top,
+.Listings--Posts--Details--Middle,
+.Listings--Posts--Details--Bottom {
+ display: flex;
+ align-items: center;
+ margin: 10px;
+ gap: 0px 10px;
+}
+
+.Listings--Posts--Detials--Company,
+.Listings--Post--Details--New,
+.Listings--Posts--Detials--Time,
+.Listings--Post--Details-Contract,
+.Listings--Post--Details--Location,
+.Listings--Post--Details--Featured {
+ font-size: 12px;
+ margin: 0 10px;
+}
+.Listings--Posts--Detials--positions {
+ font-size: 20px;
+ margin: 0 10px;
+}
+
+.Listings--Posts--Details--Bottom {
+ color: $Dark-Grayish-Cyan;
+}
+
+.Listings--Posts--Detials--Company {
+ color: $Desaturated-Dark-Cyan;
+}
+
+.Listings--Post--Details--New,
+.Listings--Post--Details--Featured {
+ color: white;
+ font-weight: 500;
+}
+
+.Listings--Post--Details--New-Bubble,
+.Listings--Post--Details--Featured-Bubble {
+ border-radius: 10px;
+ display: flex;
+ align-items: center;
+ height: 18px;
+}
+
+.Listings--Post--Details--New-Bubble {
+ background-color: $Desaturated-Dark-Cyan;
+}
+
+.Listings--Post--Details--Featured-Bubble {
+ background-color: black;
+}
+
+@media screen and (max-width: 800px) {
+ .Listings--Posts {
+  margin-top: 75px;
+ }
+
+ .Listings--Posts--Details--Bottom {
+  padding-bottom: 25px;
+  border-bottom: 1px solid $Light-Grayish-Cyan-Table;
+ }
+
+ .Listings--Posts--Details-Logo {
+  position: absolute;
+  margin-top: -75px;
+ }
+
+ .Listings--Posts--Skills {
+  margin: 15px;
+ }
+}
