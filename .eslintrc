@@ -1,6 +1,8 @@
 {
  "rules": {
-  "react/jsx-indent": ["enabled", "tab"],
-  "prefer-single": ["warn", "prefer-single"]
+  "react/jsx-indent": ["warn", "tab"]
+ },
+ "parserOptions": {
+  "sourceType": "module"
  }
 }

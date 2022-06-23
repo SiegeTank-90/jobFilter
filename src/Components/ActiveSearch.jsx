@@ -1,9 +1,6 @@
-import { toHaveFormValues } from "@testing-library/jest-dom/dist/matchers";
 import React from "react";
 import DeleteSearch from "./DeleteSearch";
-
 function ActiveSearch({ searchParam, setSearchParam }) {
-
     const SearchedParams = []
     let validateArray = []
     const keys = Object.keys(searchParam)
